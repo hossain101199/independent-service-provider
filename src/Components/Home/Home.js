@@ -5,16 +5,16 @@ import HomePackege from "./HomePackege/HomePackege";
 
 const Home = () => {
   const [PackagesData, setPackagesData] = usePackagesData();
-  const threePackages = PackagesData.splice(0, 3);
+  const thethreePackages = PackagesData.slice(0, 3);
   return (
     <div>
       <Banner></Banner>
       <h2 className="mt-3 text-center">Packages</h2>
       <div className="mt-3 row g-4">
-        {threePackages.map((threePackage) => (
+        {thethreePackages.map((thethreePackage) => (
           <HomePackege
-            key={threePackages.id}
-            threePackage={threePackage}
+            key={thethreePackage.id}
+            thethreePackage={thethreePackage}
           ></HomePackege>
         ))}
       </div>

@@ -1,83 +1,74 @@
 [
   {
     "id": "001",
-    "index": 0,
-    "price": "250 BDT",
-    "picture": "./Package-images/image1.jpeg",
-    "name": "Wrist Covered Semi-bridal ",
-    "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eros mauris, fringilla vel enim laoreet, scelerisque tincidunt dui. Vivamus id imperdiet erat. Nam ut tincidunt diam. Ut vitae velit eros. Etiam consectetur dapibus libero. Sed porta ante eget mi porta gravida. Donec quis vehicula tortor.",
-    "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eros mauris, fringilla vel enim laoreet, scelerisque tincidunt dui. Vivamus id imperdiet erat. Nam ut tincidunt diam. Ut vitae velit eros. Etiam consectetur dapibus libero. Sed porta ante eget mi porta gravida. Donec quis vehicula tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam maximus enim eu tempor fringilla. In ac purus sit amet dui malesuada maximus in id eros. Donec tincidunt eget lectus vitae tincidunt. Nullam leo magna, bibendum at dolor et, suscipit porta neque. Sed risus elit, tempor vitae sollicitudin vel, vulputate nec eros. Proin vel sem justo. Phasellus volutpat dictum dapibus. Vivamus sit amet placerat neque."
-  },
-  {
-    "id": "002",
     "index": 1,
     "price": "250 BDT",
     "picture": "./Package-images/image1.jpeg",
     "name": "Wrist Covered Semi-bridal ",
-    "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eros mauris, fringilla vel enim laoreet, scelerisque tincidunt dui. Vivamus id imperdiet erat. Nam ut tincidunt diam. Ut vitae velit eros. Etiam consectetur dapibus libero. Sed porta ante eget mi porta gravida. Donec quis vehicula tortor.",
+    "shortDescription": "In this package price 250৳ is for per side.For doing this design 4sides of two hands Minimum 2-3hours will be needed.",
+    "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eros mauris, fringilla vel enim laoreet, scelerisque tincidunt dui. Vivamus id imperdiet erat. Nam ut tincidunt diam. Ut vitae velit eros. Etiam consectetur dapibus libero. Sed porta ante eget mi porta gravida. Donec quis vehicula tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam maximus enim eu tempor fringilla. In ac purus sit amet dui malesuada maximus in id eros. Donec tincidunt eget lectus vitae tincidunt. Nullam leo magna, bibendum at dolor et, suscipit porta neque. Sed risus elit, tempor vitae sollicitudin vel, vulputate nec eros. Proin vel sem justo. Phasellus volutpat dictum dapibus. Vivamus sit amet placerat neque."
+  },
+  {
+    "id": "002",
+    "index": 2,
+    "price": "2000 BDT",
+    "picture": "./Package-images/image2.jpeg",
+    "name": "Gorgeous Bridal Till Elbow",
+    "shortDescription": "The price is for 4sides of two hand.This design will took 5-6hours minimum.Henna cones are included with the price.",
     "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eros mauris, fringilla vel enim laoreet, scelerisque tincidunt dui. Vivamus id imperdiet erat. Nam ut tincidunt diam. Ut vitae velit eros. Etiam consectetur dapibus libero. Sed porta ante eget mi porta gravida. Donec quis vehicula tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam maximus enim eu tempor fringilla. In ac purus sit amet dui malesuada maximus in id eros. Donec tincidunt eget lectus vitae tincidunt. Nullam leo magna, bibendum at dolor et, suscipit porta neque. Sed risus elit, tempor vitae sollicitudin vel, vulputate nec eros. Proin vel sem justo. Phasellus volutpat dictum dapibus. Vivamus sit amet placerat neque."
   },
   {
     "id": "003",
-    "index": 2,
-    "price": "250 BDT",
-    "picture": "./Package-images/image1.jpeg",
-    "name": "Wrist Covered Semi-bridal ",
-    "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eros mauris, fringilla vel enim laoreet, scelerisque tincidunt dui. Vivamus id imperdiet erat. Nam ut tincidunt diam. Ut vitae velit eros. Etiam consectetur dapibus libero. Sed porta ante eget mi porta gravida. Donec quis vehicula tortor.",
+    "index": 3,
+    "price": "200 BDT",
+    "picture": "./Package-images/image3.jpeg",
+    "name": "Mandala with finger Design.",
+    "shortDescription": "The price is for per side.This design will took 2hours minimum for 4sides of two hands.Henna cones are included with the price.",
     "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eros mauris, fringilla vel enim laoreet, scelerisque tincidunt dui. Vivamus id imperdiet erat. Nam ut tincidunt diam. Ut vitae velit eros. Etiam consectetur dapibus libero. Sed porta ante eget mi porta gravida. Donec quis vehicula tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam maximus enim eu tempor fringilla. In ac purus sit amet dui malesuada maximus in id eros. Donec tincidunt eget lectus vitae tincidunt. Nullam leo magna, bibendum at dolor et, suscipit porta neque. Sed risus elit, tempor vitae sollicitudin vel, vulputate nec eros. Proin vel sem justo. Phasellus volutpat dictum dapibus. Vivamus sit amet placerat neque."
   },
   {
     "id": "004",
-    "index": 3,
-    "price": "250 BDT",
-    "picture": "./Package-images/image1.jpeg",
-    "name": "Wrist Covered Semi-bridal ",
-    "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eros mauris, fringilla vel enim laoreet, scelerisque tincidunt dui. Vivamus id imperdiet erat. Nam ut tincidunt diam. Ut vitae velit eros. Etiam consectetur dapibus libero. Sed porta ante eget mi porta gravida. Donec quis vehicula tortor.",
+    "index": 4,
+    "price": "1200 BDT",
+    "picture": "./Package-images/image4.jpeg",
+    "name": "Semi-bridal regular length.",
+    "shortDescription": "The price is for 4sides of two hand.This design will took 3-4hours minimum. Henna cones are included with the price.",
     "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eros mauris, fringilla vel enim laoreet, scelerisque tincidunt dui. Vivamus id imperdiet erat. Nam ut tincidunt diam. Ut vitae velit eros. Etiam consectetur dapibus libero. Sed porta ante eget mi porta gravida. Donec quis vehicula tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam maximus enim eu tempor fringilla. In ac purus sit amet dui malesuada maximus in id eros. Donec tincidunt eget lectus vitae tincidunt. Nullam leo magna, bibendum at dolor et, suscipit porta neque. Sed risus elit, tempor vitae sollicitudin vel, vulputate nec eros. Proin vel sem justo. Phasellus volutpat dictum dapibus. Vivamus sit amet placerat neque."
   },
   {
     "id": "005",
-    "index": 4,
-    "price": "250 BDT",
-    "picture": "./Package-images/image1.jpeg",
-    "name": "Wrist Covered Semi-bridal ",
-    "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eros mauris, fringilla vel enim laoreet, scelerisque tincidunt dui. Vivamus id imperdiet erat. Nam ut tincidunt diam. Ut vitae velit eros. Etiam consectetur dapibus libero. Sed porta ante eget mi porta gravida. Donec quis vehicula tortor.",
+    "index": 5,
+    "price": "100 BDT",
+    "picture": "./Package-images/image5.jpeg",
+    "name": "Simple string.",
+    "shortDescription": "This design is simple but most elegant one.Price is for per side.This take 5-10mins to complete.",
     "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eros mauris, fringilla vel enim laoreet, scelerisque tincidunt dui. Vivamus id imperdiet erat. Nam ut tincidunt diam. Ut vitae velit eros. Etiam consectetur dapibus libero. Sed porta ante eget mi porta gravida. Donec quis vehicula tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam maximus enim eu tempor fringilla. In ac purus sit amet dui malesuada maximus in id eros. Donec tincidunt eget lectus vitae tincidunt. Nullam leo magna, bibendum at dolor et, suscipit porta neque. Sed risus elit, tempor vitae sollicitudin vel, vulputate nec eros. Proin vel sem justo. Phasellus volutpat dictum dapibus. Vivamus sit amet placerat neque."
   },
   {
     "id": "006",
-    "index": 5,
-    "price": "250 BDT",
-    "picture": "./Package-images/image1.jpeg",
-    "name": "Wrist Covered Semi-bridal ",
-    "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eros mauris, fringilla vel enim laoreet, scelerisque tincidunt dui. Vivamus id imperdiet erat. Nam ut tincidunt diam. Ut vitae velit eros. Etiam consectetur dapibus libero. Sed porta ante eget mi porta gravida. Donec quis vehicula tortor.",
+    "index": 6,
+    "price": "200 BDT",
+    "picture": "./Package-images/image6.jpeg",
+    "name": "Heavy  string with Finger design.",
+    "shortDescription": " This design cost 200৳ for per side.Take 10-15mins to complete per side.",
     "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eros mauris, fringilla vel enim laoreet, scelerisque tincidunt dui. Vivamus id imperdiet erat. Nam ut tincidunt diam. Ut vitae velit eros. Etiam consectetur dapibus libero. Sed porta ante eget mi porta gravida. Donec quis vehicula tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam maximus enim eu tempor fringilla. In ac purus sit amet dui malesuada maximus in id eros. Donec tincidunt eget lectus vitae tincidunt. Nullam leo magna, bibendum at dolor et, suscipit porta neque. Sed risus elit, tempor vitae sollicitudin vel, vulputate nec eros. Proin vel sem justo. Phasellus volutpat dictum dapibus. Vivamus sit amet placerat neque."
   },
   {
     "id": "007",
-    "index": 6,
-    "price": "250 BDT",
-    "picture": "./Package-images/image1.jpeg",
-    "name": "Wrist Covered Semi-bridal ",
-    "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eros mauris, fringilla vel enim laoreet, scelerisque tincidunt dui. Vivamus id imperdiet erat. Nam ut tincidunt diam. Ut vitae velit eros. Etiam consectetur dapibus libero. Sed porta ante eget mi porta gravida. Donec quis vehicula tortor.",
+    "index": 7,
+    "price": "1800 BDT",
+    "picture": "./Package-images/image7.jpeg",
+    "name": "Bridal With gap design. ",
+    "shortDescription": "This will cost 1800৳ for 4sides of Two hands.This take 4-5hours to complete.Henna cones included with price.",
     "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eros mauris, fringilla vel enim laoreet, scelerisque tincidunt dui. Vivamus id imperdiet erat. Nam ut tincidunt diam. Ut vitae velit eros. Etiam consectetur dapibus libero. Sed porta ante eget mi porta gravida. Donec quis vehicula tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam maximus enim eu tempor fringilla. In ac purus sit amet dui malesuada maximus in id eros. Donec tincidunt eget lectus vitae tincidunt. Nullam leo magna, bibendum at dolor et, suscipit porta neque. Sed risus elit, tempor vitae sollicitudin vel, vulputate nec eros. Proin vel sem justo. Phasellus volutpat dictum dapibus. Vivamus sit amet placerat neque."
   },
   {
     "id": "008",
-    "index": 7,
-    "price": "250 BDT",
-    "picture": "./Package-images/image1.jpeg",
-    "name": "Wrist Covered Semi-bridal ",
-    "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eros mauris, fringilla vel enim laoreet, scelerisque tincidunt dui. Vivamus id imperdiet erat. Nam ut tincidunt diam. Ut vitae velit eros. Etiam consectetur dapibus libero. Sed porta ante eget mi porta gravida. Donec quis vehicula tortor.",
-    "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eros mauris, fringilla vel enim laoreet, scelerisque tincidunt dui. Vivamus id imperdiet erat. Nam ut tincidunt diam. Ut vitae velit eros. Etiam consectetur dapibus libero. Sed porta ante eget mi porta gravida. Donec quis vehicula tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam maximus enim eu tempor fringilla. In ac purus sit amet dui malesuada maximus in id eros. Donec tincidunt eget lectus vitae tincidunt. Nullam leo magna, bibendum at dolor et, suscipit porta neque. Sed risus elit, tempor vitae sollicitudin vel, vulputate nec eros. Proin vel sem justo. Phasellus volutpat dictum dapibus. Vivamus sit amet placerat neque."
-  },
-  {
-    "id": "009",
     "index": 8,
-    "price": "250 BDT",
+    "price": "1400 BDT",
     "picture": "./Package-images/image1.jpeg",
-    "name": "Wrist Covered Semi-bridal ",
-    "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eros mauris, fringilla vel enim laoreet, scelerisque tincidunt dui. Vivamus id imperdiet erat. Nam ut tincidunt diam. Ut vitae velit eros. Etiam consectetur dapibus libero. Sed porta ante eget mi porta gravida. Donec quis vehicula tortor.",
+    "name": "emi-bridal till midway.",
+    "shortDescription": "The price is for 4sides of two hand. This design will took 3-4hours minimum. Henna cones are included with the price.",
     "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eros mauris, fringilla vel enim laoreet, scelerisque tincidunt dui. Vivamus id imperdiet erat. Nam ut tincidunt diam. Ut vitae velit eros. Etiam consectetur dapibus libero. Sed porta ante eget mi porta gravida. Donec quis vehicula tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam maximus enim eu tempor fringilla. In ac purus sit amet dui malesuada maximus in id eros. Donec tincidunt eget lectus vitae tincidunt. Nullam leo magna, bibendum at dolor et, suscipit porta neque. Sed risus elit, tempor vitae sollicitudin vel, vulputate nec eros. Proin vel sem justo. Phasellus volutpat dictum dapibus. Vivamus sit amet placerat neque."
   }
 ]

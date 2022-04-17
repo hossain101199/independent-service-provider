@@ -1,8 +1,11 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { useAuthState } from "react-firebase-hooks/auth";
+import { Link, NavLink } from "react-router-dom";
+import auth from "../../firebase.init";
 import logoIMG from "../Images/logo.jpeg";
 
 const Navbar = () => {
+  const [user, loading, error] = useAuthState(auth);
   return (
     <div>
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -49,11 +52,19 @@ const Navbar = () => {
                     Contact
                   </NavLink>
                 </li>
-                <li className="nav-item">
-                  <NavLink className="nav-link" to="/Login">
-                    Login
-                  </NavLink>
-                </li>
+                {user ? (
+                  <li className="nav-item">
+                    <Link className="nav-link" to="#">
+                      Log Out
+                    </Link>
+                  </li>
+                ) : (
+                  <li className="nav-item">
+                    <NavLink className="nav-link" to="/Login">
+                      Login
+                    </NavLink>
+                  </li>
+                )}
               </ul>
             </div>
           </div>

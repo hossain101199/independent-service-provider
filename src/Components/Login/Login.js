@@ -1,57 +1,126 @@
-import React, { useState } from "react";
-import { useSignInWithGoogle } from "react-firebase-hooks/auth";
-import { Link } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { useSignInWithEmailAndPassword } from "react-firebase-hooks/auth";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import auth from "../../firebase.init";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Login = () => {
-  const [Email, setEmail] = useState("");
-  const [Password, setPassword] = useState("");
+  const [userInfo, setuserInfo] = useState({
+    Email: "",
+    Password: "",
+  });
+
+  const [myreeoes, setmyreeoes] = useState({
+    Email: "",
+    Password: "",
+    allError: "",
+  });
+
+  const [signInWithEmailAndPassword, user, loading, HookError] =
+    useSignInWithEmailAndPassword(auth);
+
   const handleEmail = (e) => {
-    setEmail(e.target.value);
+    const emilRegex = /\S+@\S+\.\S+/;
+    const validEmail = emilRegex.test(e.target.value);
+    if (validEmail) {
+      setuserInfo({ ...userInfo, Email: e.target.value });
+      setmyreeoes({ ...myreeoes, Email: "" });
+    } else {
+      setmyreeoes({ ...myreeoes, Email: "❌ Invalid email" });
+      setuserInfo({ ...userInfo, Email: "" });
+    }
   };
+
   const handlePassword = (e) => {
-    setPassword(e.target.value);
+    const PasswordRegex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
+    const validPassword = PasswordRegex.test(e.target.value);
+    if (validPassword) {
+      setuserInfo({ ...userInfo, Password: e.target.value });
+      setmyreeoes({ ...myreeoes, Password: "" });
+    } else {
+      setmyreeoes({
+        ...myreeoes,
+        Password:
+          "Password must be minimum eight characters,at least one letter and one number",
+      });
+      setuserInfo({ ...userInfo, Password: "" });
+    }
   };
+  const handleLogin = (e) => {
+    e.preventDefault();
+
+    signInWithEmailAndPassword(userInfo.Email, userInfo.Password);
+  };
+  useEffect(() => {
+    if (HookError) {
+      toast.warn(HookError?.message, {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+      });
+    }
+  }, [HookError]);
+  const navigate = useNavigate();
+  const location = useLocation();
+  const from = location.state?.from?.pathname || "/";
+  useEffect(() => {
+    if (user) {
+      navigate(from);
+    }
+  }, [user]);
   return (
     <div className="w-50 m-auto">
       <h1 className="text-center w-100 mt-3">Log in to your account</h1>
-      <form>
+      <form onSubmit={handleLogin}>
         <div className="mb-3">
-          <label for="exampleInputEmail1" className="form-label">
+          <label htmlFor="exampleInputEmail1" className="form-label">
             Email address
           </label>
           <input
-            onBlur={handleEmail}
+            onChange={handleEmail}
             type="email"
             className="form-control"
             id="exampleInputEmail1"
             aria-describedby="emailHelp"
             required
           />
-          <div id="emailHelp" className="form-text">
-            We'll never share your email with anyone else.
-          </div>
+          {myreeoes?.Email && (
+            <div id="emailHelp" className="text-danger">
+              {myreeoes.Email}
+            </div>
+          )}
         </div>
         <div className="mb-3">
-          <label for="exampleInputPassword1" className="form-label">
+          <label htmlFor="exampleInputPassword1" className="form-label">
             Password
           </label>
           <input
-            onBlur={handlePassword}
+            onChange={handlePassword}
             type="password"
             className="form-control"
             id="exampleInputPassword1"
             required
           />
+          {myreeoes?.Password && (
+            <div id="emailHelp" className="text-danger">
+              {myreeoes?.Password}
+            </div>
+          )}
         </div>
         <div className="mb-3">
           <label
             className="form-check-label text-center w-100"
-            for="exampleCheck1"
+            htmlFor="exampleCheck1"
           >
-            Forgot Your Passwoed?
+            Forgot Your password?
           </label>
         </div>
+
         <button type="submit" className="btn btn-primary w-100 fs-5">
           Login
         </button>
@@ -63,10 +132,10 @@ const Login = () => {
         <hr className="w-50 h-" />
       </div>
       <button type="submit" className="btn btn-primary w-100 fs-5 mb-3">
-        <i class="fa-brands fa-google"></i> Continue with google
+        <i className="fa-brands fa-google"></i> Continue with google
       </button>
       <button type="submit" className="btn btn-primary w-100 fs-5">
-        <i class="fa-brands fa-facebook"></i> Continue with Facebook
+        <i className="fa-brands fa-facebook"></i> Continue with Facebook
       </button>
       {/* continue with google facebok */}
       <hr />
@@ -75,6 +144,17 @@ const Login = () => {
           Create New Account
         </button>
       </Link>
+      <ToastContainer
+        position="top-center"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+      ></ToastContainer>
     </div>
   );
 };

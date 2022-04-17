@@ -10,6 +10,7 @@ import Page404 from "./Components/page404/Page404";
 import Contact from "./Components/Contact/Contact";
 import RequireAuth from "./Components/Auth/RequireAuth/RequireAuth";
 import Footer from "./Components/Footer/Footer";
+import BookingPage from "./Components/BookingPage/BookingPage";
 
 function App() {
   return (
@@ -25,6 +26,14 @@ function App() {
           element={
             <RequireAuth>
               <Contact></Contact>
+            </RequireAuth>
+          }
+        ></Route>
+        <Route
+          path="/Booking"
+          element={
+            <RequireAuth>
+              <BookingPage></BookingPage>
             </RequireAuth>
           }
         ></Route>
