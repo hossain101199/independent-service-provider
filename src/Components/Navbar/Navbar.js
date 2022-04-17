@@ -18,7 +18,7 @@ const Navbar = () => {
               height="50"
               className="d-inline-block align-text-top me-3"
             />
-            Samihas's Mehendi
+            Samiha's Mehendi
           </NavLink>
 
           <div className="d-flex fw-bolder fs-4">
