@@ -44,6 +44,7 @@ const Login = () => {
           Login
         </button>
       </form>
+      {/* continue with google facebok */}
       <div className="d-flex justify-content-center align-items-center">
         <hr className="w-50 " />
         <h4 className="m-3">or</h4>
@@ -55,6 +56,7 @@ const Login = () => {
       <button type="submit" className="btn btn-primary w-100 fs-5">
         <i class="fa-brands fa-facebook"></i> Continue with Facebook
       </button>
+      {/* continue with google facebok */}
       <hr />
       <Link to="/CreateAccount">
         <button type="submit" className="btn btn-primary w-100 fs-5">

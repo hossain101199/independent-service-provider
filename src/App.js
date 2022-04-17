@@ -6,6 +6,9 @@ import About from "./Components/About/About";
 import Login from "./Components/Login/Login";
 import CreateAccount from "./Components/CreateAccount/CreateAccount";
 import Navbar from "./Components/Navbar/Navbar";
+import Page404 from "./Components/page404/Page404";
+import Contact from "./Components/Contact/Contact";
+import RequireAuth from "./Components/Auth/RequireAuth/RequireAuth";
 
 function App() {
   return (
@@ -16,11 +19,20 @@ function App() {
         <Route path="/Home" element={<Home></Home>}></Route>
         <Route path="/Packages" element={<Packages></Packages>}></Route>
         <Route path="/About" element={<About></About>}></Route>
+        <Route
+          path="/Contact"
+          element={
+            <RequireAuth>
+              <Contact></Contact>
+            </RequireAuth>
+          }
+        ></Route>
         <Route path="/Login" element={<Login></Login>}></Route>
         <Route
           path="/CreateAccount"
           element={<CreateAccount></CreateAccount>}
         ></Route>
+        <Route path="*" element={<Page404></Page404>}></Route>
       </Routes>
     </div>
   );

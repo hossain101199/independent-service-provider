@@ -55,14 +55,6 @@ const CreateAccount = () => {
             required
           />
         </div>
-        <div className="mb-3">
-          <label
-            className="form-check-label text-center w-100"
-            for="exampleCheck1"
-          >
-            Forgot Your Passwoed?
-          </label>
-        </div>
         <button type="submit" className="btn btn-primary w-100 fs-5">
           Create account
         </button>
