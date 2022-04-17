@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "userImage": "https://i.pinimg.com/474x/c3/d8/fe/c3d8fe29f00e7459daecf0a2abcc6359.jpg",
+    "user": "john29",
+    "text": "Been using Pro Formula reishi from Reishi Essence with very positive results. After many visits to doctors and specialists, they couldn't find what was wrong with me except the fact that I need to eat healthier and be more active. I have low metabolism overall so I experienced fatigue, lack of stamina and energy. ",
+    "rating": "Rating: 4/5;"
+  },
+  {
+    "id": 2,
+    "userImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqVejBlTvXVsFgC8eSXmDAseuMiLq0JRzpSVHjvAJEu2vPE05FKBYfKv6tW4nt4VDg2zg&usqp=CAU",
+    "user": "rick01",
+    "text": "I started taking ganoderma almost two years ago when a friend suggested I try ganocafe. I had no idea what it was, and didn't expect any results. After a month, so many of the digestive problems that I had seen countless gastro doctors for disappeared and my energy levels were notable. ",
+    "rating": "Rating: 4/5;"
+  },
+  {
+    "id": 3,
+    "userImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUusRKVyyE9wC334sCttzNhw-ELKZLqRhg9le7driVdaumOwGAa0IuhkIDNBxTLatCoa4&usqp=CAU",
+    "user": "john43",
+    "text": "elizabethchua602atyahoocom- I had experience ulcer way back 2005 and I vomited a lot whenever food came in my stomach, not even a piece of bread nor small fruit can go in. My stools had blood. I can't even walk 10 meters from where I stand. Then a friend introduce Lingzhi. ",
+    "rating": "Rating: 4/5;"
+  },
+  {
+    "id": 4,
+    "userImage": "https://images.unsplash.com/photo-1613940101993-1dd7222b397c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y29vbCUyMGJveXxlbnwwfHwwfHw%3D&w=1000&q=80",
+
+    "user": "john29",
+    "text": "I began a daily regimen of (Mushroom Harvest) Reshi, Lions Mane and Cordyceps ~ 1000-1500mg after finally recognizing a cutaneous melanoma on my back as serious. A dermatologist cut it all out but I also had nail bed streaks and apparent nodular melanoma on my arm. ",
+    "rating": "Rating: 4/5;"
+  },
+  {
+    "id": 5,
+    "userImage": "https://images.unsplash.com/photo-1549163815-c0b418c0cfaa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y29vbCUyMGJveXxlbnwwfHwwfHw%3D&w=1000&q=80",
+
+    "user": "john29",
+    "text": "Reishi is amazing in complementing my treatment for breasts cancer. Under my doctor's supervision, I have been taking Pro Formula Reishi since my treatment started. My cancer is now in remission but I keep taking Pro Formula to maintain and prevent relapses.",
+    "rating": "Rating: 4/5;"
+  },
+  {
+    "id": 6,
+    "userImage": "https://images.unsplash.com/photo-1611637576109-b6f76185ec9b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8Ym95c3xlbnwwfHwwfHw%3D&w=1000&q=80",
+
+    "user": "john29",
+    "text": "I have been taking spore powder ganoderma for 1.5 months. I have now started experiencing watery diarrhea for 7 days now and was told that I'm detoxifying. I have bad stomach pains so terribly bad that I had to stop taking it.",
+    "rating": "Rating: 4/5;"
+  }
+]

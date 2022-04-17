@@ -1,7 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
+import { useSignInWithGoogle } from "react-firebase-hooks/auth";
 import { Link } from "react-router-dom";
+import auth from "../../firebase.init";
 
 const Login = () => {
+  const [Email, setEmail] = useState("");
+  const [Password, setPassword] = useState("");
+  const handleEmail = (e) => {
+    setEmail(e.target.value);
+  };
+  const handlePassword = (e) => {
+    setPassword(e.target.value);
+  };
   return (
     <div className="w-50 m-auto">
       <h1 className="text-center w-100 mt-3">Log in to your account</h1>
@@ -11,6 +21,7 @@ const Login = () => {
             Email address
           </label>
           <input
+            onBlur={handleEmail}
             type="email"
             className="form-control"
             id="exampleInputEmail1"
@@ -26,6 +37,7 @@ const Login = () => {
             Password
           </label>
           <input
+            onBlur={handlePassword}
             type="password"
             className="form-control"
             id="exampleInputPassword1"

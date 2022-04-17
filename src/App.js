@@ -9,6 +9,7 @@ import Navbar from "./Components/Navbar/Navbar";
 import Page404 from "./Components/page404/Page404";
 import Contact from "./Components/Contact/Contact";
 import RequireAuth from "./Components/Auth/RequireAuth/RequireAuth";
+import Footer from "./Components/Footer/Footer";
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
         ></Route>
         <Route path="*" element={<Page404></Page404>}></Route>
       </Routes>
+      <Footer></Footer>
     </div>
   );
 }
