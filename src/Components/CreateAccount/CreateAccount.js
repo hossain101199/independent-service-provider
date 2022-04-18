@@ -102,7 +102,7 @@ const CreateAccount = () => {
   }, [user, googleuser, FBuser]);
 
   return (
-    <div className="w-50 m-auto">
+    <div className="w-50 m-auto" style={{ minHeight: "80vh" }}>
       <h1 className="text-center w-100 mt-3">Create a New Account</h1>
       <form onSubmit={handlecreateUser}>
         <div className="mb-3">

@@ -99,7 +99,7 @@ const Login = () => {
     }
   }, [user, googleuser, FBuser]);
   return (
-    <div className="w-50 m-auto">
+    <div className="w-50 m-auto" style={{ minHeight: "80vh" }}>
       <h1 className="text-center w-100 mt-3">Log in to your account</h1>
       <form onSubmit={handleLogin}>
         <div className="mb-3">

@@ -5,7 +5,7 @@ const BookingPage = () => {
     e.preventDefault();
   };
   return (
-    <div className="mt-3">
+    <div className="mt-3" style={{ minHeight: "80vh" }}>
       <div className="row">
         <h3 className="text-center">Book appointment</h3>
         <div className="col-md-6">
@@ -73,7 +73,7 @@ const BookingPage = () => {
                 rows="3"
               ></textarea>
             </div>
-            <div className="col-12">
+            <div className="col-12 text-end">
               <button type="submit" className="btn btn-primary w-25">
                 Submit
               </button>
@@ -82,7 +82,7 @@ const BookingPage = () => {
         </div>
         <div className="col-md-6">
           <div className="card">
-            <img src="" className="card-img-top" alt="..." />
+            <img src={""} className="card-img-top" alt="..." />
             <div className="card-body">
               <h3 className="card-title">{}</h3>
               <h5>{}</h5>

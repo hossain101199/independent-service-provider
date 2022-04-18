@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
+import { Contesxtapp } from "../../../App";
 
 const Package = ({ Package }) => {
+  // const selectedItem = useContext(Contesxtapp);
   const { price, picture, name, shortDescription } = Package;
   return (
     <div className="col-md-4">

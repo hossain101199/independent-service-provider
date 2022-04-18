@@ -53,7 +53,7 @@ const Navbar = () => {
 
                 <li className="nav-item">
                   <NavLink className="nav-link" to="/Contact">
-                    Contact
+                    Blogs
                   </NavLink>
                 </li>
                 {user ? (

@@ -7,13 +7,20 @@ import Login from "./Components/Login/Login";
 import CreateAccount from "./Components/CreateAccount/CreateAccount";
 import Navbar from "./Components/Navbar/Navbar";
 import Page404 from "./Components/page404/Page404";
-import Contact from "./Components/Contact/Contact";
+import Blogs from "./Components/Blogs/Blogs";
 import RequireAuth from "./Components/Auth/RequireAuth/RequireAuth";
 import Footer from "./Components/Footer/Footer";
 import BookingPage from "./Components/BookingPage/BookingPage";
+import { createContext, useState } from "react";
+// export const Contesxtapp = createContext("");
 
 function App() {
+  // const [selectedItems, setselectedItems] = useState([]);
+  // const SelectedPpackage = (data) => {
+  //   selectedItems(data);
+  // };
   return (
+    // <Contesxtapp.Provider value={selectedItems}>
     <div className="App container">
       <Navbar></Navbar>
       <Routes>
@@ -21,14 +28,7 @@ function App() {
         <Route path="/Home" element={<Home></Home>}></Route>
         <Route path="/Packages" element={<Packages></Packages>}></Route>
         <Route path="/About" element={<About></About>}></Route>
-        <Route
-          path="/Contact"
-          element={
-            <RequireAuth>
-              <Contact></Contact>
-            </RequireAuth>
-          }
-        ></Route>
+        <Route path="/Contact" element={<Blogs></Blogs>}></Route>
         <Route
           path="/Booking"
           element={
@@ -46,6 +46,7 @@ function App() {
       </Routes>
       <Footer></Footer>
     </div>
+    // </Contesxtapp.Provider>
   );
 }
 
