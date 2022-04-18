@@ -1,6 +1,7 @@
 # Samiha's Mehendi
 
-live website [Samiha's Mehendi](https://astonishing-beignet-726569.netlify.app/)
+live website in firebase [Samiha's Mehendi](https://samiha-s-mehendi.web.app/)
+live website in netlify [Samiha's Mehendi](https://astonishing-beignet-726569.netlify.app/)
 
 What I did on this website....
 
