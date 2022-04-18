@@ -1,5 +1,9 @@
 import React, { useEffect, useState } from "react";
-import { useCreateUserWithEmailAndPassword } from "react-firebase-hooks/auth";
+import {
+  useCreateUserWithEmailAndPassword,
+  useSignInWithFacebook,
+  useSignInWithGoogle,
+} from "react-firebase-hooks/auth";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import auth from "../../firebase.init";
 import { ToastContainer, toast } from "react-toastify";
@@ -18,8 +22,14 @@ const CreateAccount = () => {
     Confirmpassword: "",
     allError: "",
   });
+
   const [createUserWithEmailAndPassword, user, loading, HookError] =
     useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
+  const [signInWithGoogle, googleuser, googleloading, googleerror] =
+    useSignInWithGoogle(auth);
+
+  const [signInWithFacebook, FBuser, fbloading, FBerror] =
+    useSignInWithFacebook(auth);
 
   const handleEmail = (e) => {
     const emilRegex = /\S+@\S+\.\S+/;
@@ -66,9 +76,11 @@ const CreateAccount = () => {
     e.preventDefault();
     createUserWithEmailAndPassword(userInfo.Email, userInfo.Password);
   };
+
   useEffect(() => {
-    if (HookError) {
-      toast.warn(HookError?.message, {
+    const Error = googleerror || HookError || FBerror;
+    if (Error) {
+      toast.warn(Error?.message, {
         position: "top-center",
         autoClose: 5000,
         hideProgressBar: false,
@@ -78,15 +90,17 @@ const CreateAccount = () => {
         progress: undefined,
       });
     }
-  }, [HookError]);
+  }, [HookError, googleerror, FBerror]);
+
   const navigate = useNavigate();
   const location = useLocation();
   const from = location.state?.from?.pathname || "/";
   useEffect(() => {
-    if (user) {
+    if (user || googleuser || FBuser) {
       navigate(from);
     }
-  }, [user]);
+  }, [user, googleuser, FBuser]);
+
   return (
     <div className="w-50 m-auto">
       <h1 className="text-center w-100 mt-3">Create a New Account</h1>
@@ -151,10 +165,18 @@ const CreateAccount = () => {
         <h4 className="m-3">or</h4>
         <hr className="w-50 h-" />
       </div>
-      <button type="submit" className="btn btn-primary w-100 fs-5 mb-3">
+      <button
+        onClick={() => signInWithGoogle()}
+        type="submit"
+        className="btn btn-primary w-100 fs-5 mb-3"
+      >
         <i className="fa-brands fa-google"></i> Continue with google
       </button>
-      <button type="submit" className="btn btn-primary w-100 fs-5">
+      <button
+        onClick={() => signInWithFacebook()}
+        type="submit"
+        className="btn btn-primary w-100 fs-5"
+      >
         <i className="fa-brands fa-facebook"></i> Continue with Facebook
       </button>
       <hr />
