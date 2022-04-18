@@ -1,4 +1,5 @@
 import React from "react";
+import Contactextrasection from "../Contactextrasection/Contactextrasection";
 import usePackagesData from "../Hooks/PackagesData";
 import Banner from "./Banner/Banner";
 import HomePackege from "./HomePackege/HomePackege";
@@ -17,6 +18,7 @@ const Home = () => {
             thethreePackage={thethreePackage}
           ></HomePackege>
         ))}
+        <Contactextrasection></Contactextrasection>
       </div>
     </div>
   );
