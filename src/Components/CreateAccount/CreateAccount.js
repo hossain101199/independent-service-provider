@@ -72,7 +72,7 @@ const CreateAccount = () => {
     }
   };
 
-  const handleLogin = (e) => {
+  const handlecreateUser = (e) => {
     e.preventDefault();
     createUserWithEmailAndPassword(userInfo.Email, userInfo.Password);
   };
@@ -104,7 +104,7 @@ const CreateAccount = () => {
   return (
     <div className="w-50 m-auto">
       <h1 className="text-center w-100 mt-3">Create a New Account</h1>
-      <form onSubmit={handleLogin}>
+      <form onSubmit={handlecreateUser}>
         <div className="mb-3">
           <label className="form-label">Your name</label>
           <input type="text" className="form-control" required />

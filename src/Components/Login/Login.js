@@ -8,6 +8,7 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import auth from "../../firebase.init";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { sendPasswordResetEmail } from "firebase/auth";
 
 const Login = () => {
   const [userInfo, setuserInfo] = useState({
@@ -61,6 +62,19 @@ const Login = () => {
     signInWithEmailAndPassword(userInfo.Email, userInfo.Password);
   };
 
+  const handleForgotpassword = () => {
+    sendPasswordResetEmail(auth, userInfo.Email).then(() => {
+      toast.success("An email has been sent", {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+      });
+    });
+  };
   useEffect(() => {
     const Error = googleerror || HookError || FBerror;
     if (Error) {
@@ -123,13 +137,14 @@ const Login = () => {
             </div>
           )}
         </div>
-        <div className="mb-3">
-          <label
-            className="form-check-label text-center w-100"
-            htmlFor="exampleCheck1"
+        <div className="mb-3 text-center fw-normal w-100 pe-auto">
+          <Link
+            to="#"
+            onClick={handleForgotpassword}
+            className="link-dark text-decoration-none"
           >
             Forgot Your password?
-          </label>
+          </Link>
         </div>
 
         <button type="submit" className="btn btn-primary w-100 fs-5">
