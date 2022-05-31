@@ -9,20 +9,20 @@ const Contactextrasection = () => {
       <h3 className="text-center">Leave a message</h3>
       <form className="row g-3 mt-3" onClick={handlesend}>
         <div className="col-md-6">
-          <label for="inputPassword4" className="form-label">
+          <label htmlFor="inputPassword4" className="form-label">
             Name
           </label>
           <input type="text" className="form-control" />
         </div>
         <div className="col-md-6">
-          <label for="inputEmail4" className="form-label">
+          <label htmlFor="inputEmail4" className="form-label">
             Email
           </label>
           <input type="email" className="form-control" id="inputEmail4" />
         </div>
 
         <div className="col-12">
-          <label for="inputAddress" className="form-label">
+          <label htmlFor="inputAddress" className="form-label">
             Address
           </label>
           <input
@@ -34,7 +34,7 @@ const Contactextrasection = () => {
         </div>
 
         <div className="col-md-6">
-          <label for="inputCity" className="form-label">
+          <label htmlFor="inputCity" className="form-label">
             Phone
           </label>
           <input
@@ -44,17 +44,17 @@ const Contactextrasection = () => {
           />
         </div>
         <div className="col-md-4">
-          <label for="inputState" className="form-label">
+          <label htmlFor="inputState" className="form-label">
             State
           </label>
           <select id="inputState" className="form-select">
-            <option selected>Choose...</option>
+            <option defaultValue>Choose...</option>
             <option>Chittagong</option>
             <option>Dhaka</option>
           </select>
         </div>
         <div className="col-md-2">
-          <label for="inputZip" className="form-label">
+          <label htmlFor="inputZip" className="form-label">
             Zip
           </label>
           <input type="text" className="form-control" id="inputZip" />
@@ -62,7 +62,7 @@ const Contactextrasection = () => {
         <div className="col-12"></div>
 
         <div className="mb-3">
-          <label for="exampleFormControlTextarea1" className="form-label">
+          <label htmlFor="exampleFormControlTextarea1" className="form-label">
             Message
           </label>
           <textarea

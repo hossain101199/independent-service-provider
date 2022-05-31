@@ -1,10 +1,15 @@
 import React, { useContext } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Contesxtapp } from "../../../App";
 
 const Package = ({ Package }) => {
   // const selectedItem = useContext(Contesxtapp);
-  const { price, picture, name, shortDescription } = Package;
+  const { id, price, picture, name, shortDescription } = Package;
+
+  const Navigate = useNavigate();
+  const navigateToappointment = (id) => {
+    Navigate(`/Booking/${id}`);
+  };
   return (
     <div className="col-md-4">
       <div className="card" style={{ height: "700px" }}>
@@ -15,11 +20,12 @@ const Package = ({ Package }) => {
           <p className="card-text">{shortDescription}</p>
         </div>
         <div className="card-footer bg-white">
-          <Link to="/Booking">
-            <button className="btn btn-primary w-100 fs-5">
-              Book appointment <i className="fa-regular fa-calendar-check"></i>
-            </button>
-          </Link>
+          <button
+            onClick={() => navigateToappointment(id)}
+            className="btn btn-primary w-100 fs-5"
+          >
+            Book appointment <i className="fa-regular fa-calendar-check"></i>
+          </button>
         </div>
       </div>
     </div>

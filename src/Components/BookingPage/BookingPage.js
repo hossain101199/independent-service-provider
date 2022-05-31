@@ -1,9 +1,12 @@
 import React from "react";
+import { useParams } from "react-router-dom";
+import usePackagesData from "../Hooks/PackagesData";
 
 const BookingPage = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
   };
+  const { selectedPackage } = useParams();
   return (
     <div className="mt-3" style={{ minHeight: "80vh" }}>
       <div className="row">
@@ -11,20 +14,20 @@ const BookingPage = () => {
         <div className="col-md-6">
           <form className="row g-3" onClick={handleSubmit}>
             <div className="col-md-6">
-              <label for="inputPassword4" className="form-label">
+              <label htmlFor="inputPassword4" className="form-label">
                 Name
               </label>
               <input type="text" className="form-control" />
             </div>
             <div className="col-md-6">
-              <label for="inputEmail4" className="form-label">
+              <label htmlFor="inputEmail4" className="form-label">
                 Email
               </label>
               <input type="email" className="form-control" id="inputEmail4" />
             </div>
 
             <div className="col-12">
-              <label for="inputAddress" className="form-label">
+              <label htmlFor="inputAddress" className="form-label">
                 Address
               </label>
               <input
@@ -36,7 +39,7 @@ const BookingPage = () => {
             </div>
 
             <div className="col-md-6">
-              <label for="inputCity" className="form-label">
+              <label htmlFor="inputCity" className="form-label">
                 Phone
               </label>
               <input
@@ -46,17 +49,17 @@ const BookingPage = () => {
               />
             </div>
             <div className="col-md-4">
-              <label for="inputState" className="form-label">
+              <label htmlFor="inputState" className="form-label">
                 State
               </label>
               <select id="inputState" className="form-select">
-                <option selected>Choose...</option>
+                <option defaultValue>Choose...</option>
                 <option>Chittagong</option>
                 <option>Dhaka</option>
               </select>
             </div>
             <div className="col-md-2">
-              <label for="inputZip" className="form-label">
+              <label htmlFor="inputZip" className="form-label">
                 Zip
               </label>
               <input type="text" className="form-control" id="inputZip" />
@@ -64,7 +67,10 @@ const BookingPage = () => {
             <div className="col-12"></div>
 
             <div className="mb-3">
-              <label for="exampleFormControlTextarea1" className="form-label">
+              <label
+                htmlFor="exampleFormControlTextarea1"
+                className="form-label"
+              >
                 Message
               </label>
               <textarea

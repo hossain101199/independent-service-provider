@@ -11,16 +11,14 @@ import Blogs from "./Components/Blogs/Blogs";
 import RequireAuth from "./Components/Auth/RequireAuth/RequireAuth";
 import Footer from "./Components/Footer/Footer";
 import BookingPage from "./Components/BookingPage/BookingPage";
-import { createContext, useState } from "react";
-// export const Contesxtapp = createContext("");
+import { useState } from "react";
 
 function App() {
-  // const [selectedItems, setselectedItems] = useState([]);
-  // const SelectedPpackage = (data) => {
-  //   selectedItems(data);
-  // };
+  const [selectedPackage, setselectedPackage] = useState();
+  const Hendleselpackage = (data) => {
+    setselectedPackage(data);
+  };
   return (
-    // <Contesxtapp.Provider value={selectedItems}>
     <div className="App container">
       <Navbar></Navbar>
       <Routes>
@@ -30,7 +28,7 @@ function App() {
         <Route path="/About" element={<About></About>}></Route>
         <Route path="/Contact" element={<Blogs></Blogs>}></Route>
         <Route
-          path="/Booking"
+          path="/Booking/:selectedPackage"
           element={
             <RequireAuth>
               <BookingPage></BookingPage>

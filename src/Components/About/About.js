@@ -5,18 +5,19 @@ const About = () => {
     <div className="mt-3" style={{ minHeight: "80vh" }}>
       <div class="row align-items-center">
         <div class="col-md-6">
-          <h5>Mohammad Hossain</h5>
+          <h5>Samiha Samad</h5>
           <p>
-            I want to become a blockchain developer. I have already taken some
-            steps to become a blockchain developer. it is important to know
-            about web development to become a blockchain developer. for that, I
-            enrolled in programming-hero web development course.I am determined
-            to do what it takes to be a blockchain developer.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
+            praesentium harum impedit inventore voluptatem animi natus
+            consectetur beatae dicta adipisci nihil, assumenda ad asperiores ea
+            culpa fuga fugit, perspiciatis odit quas alias distinctio optio
+            libero incidunt. Corrupti natus ex, perferendis sapiente magni sit
+            voluptatum expedita, iure impedit possimus veniam quae.
           </p>
         </div>
 
         <div class="col-md-6">
-          <img src={myimg} alt="" />
+          <img className="img-fluid" src={myimg} alt="" />
         </div>
       </div>
     </div>
